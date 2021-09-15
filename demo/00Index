@@ -1,0 +1,3 @@
+HDclassif	Runs the demo of the two main functions of HDclassif.
+hdda	A simple example of HDDA using the 'wine' dataset.
+hddc	An example of clustering on the Crabs dataset. The clustering process is also shown using a PCA representation of the data.

@@ -1,0 +1,115 @@
+
+HDclassif version 2.0.3 2018-05-10:
+
+	- Changelog is not maintained anymore => see NEWS section instead.
+
+HDclassif version 2.0.2 2016-12-20:
+
+	- Changes in HDDA help pages (regarding d_select)
+	- Bug correction: now the hddc initialization init="vector" works properly 
+	- Important bug correction: there were problems when the dimension of the data was greater than d_max 
+	- Bug correction: now function hdmda works for any model.
+	- Bug correction: problem when model="ALL" in hdda() is fixed
+
+HDclassif version 2.0.1 2016-09-01:
+
+	- Bug correction: now demo(hddc) works properly
+	- Bug correction: now the value of the "noise" b, cannot be lower than the parameter noise.ctrl
+
+
+HDclassif version 2.0 2016-06-30:
+
+	- Added ICL criterion as an output for hddc
+	- Added native parallel computing for hddc => new argument mc.cores
+	- Controls for the kmeans initialization are more easily handled => there is now a kmeans.control argument in hddc
+	- Added: the slope heuristic to choose among different models in hddc
+	- In hddc: The threshold of the Cattel scree test (argument threshold) can now be a vector.
+	- Added in hddc: argument nbrep: the number of repetitions for each combination of model/K/threshold, only the best BIC is selected for these combinations
+	- Added: an explicit argument "init.vector" for user made initializations
+	- significant improvement in the algorithm for large datasets => new argument d_max that controls the maximal number of intrinsic dimensions that are computed for Cattel's scree test
+
+
+HDclassif version 1.3 2015-06-30:
+
+	- the hdmda method for classification is added (supervised classification by using HDDC within the classes)
+	- slight improvement of error handling
+	- slight changes in the help files
+
+
+HDclassif version 1.2.3 2015-02-14:
+
+- The ARI criterion is introduced in the function predict for hddc objects. It is a criterion to assess the goodness of fit of the clustering. ARI completely replaces the former "best classication rate", as the algorithm used to compute it was flawed.
+- The readability of help files is improved.
+
+
+HDclassif version 1.2.2 2013-01-15:
+
+Help files:
+- imoprtant in hddc.Rd: mismatch between the code and the help files; the stopping criterion (eps) now is correctly described as 'the difference between two successive log likelihoods' (as it is in the code) instead of 'the difference between two successive log likelihood per observation'
+- some rewritting of help files
+Code issues:
+- now some errors are now handled properly by the function hddc
+- corrected a bug when using common dimension models which could lead to a selection of the intrinsic dimension of 0
+- now hddc will stop if the number of potential individuals in a class is inferior to 2; if so it will give the message 'empty class' which means stricly less than 2 individuals
+- in hddc and hdda the option 'dim.ctrl' is now named 'noise.ctrl' for a clearer meaning
+- changing the name of the option 'ctrl' in hddc to 'min.individuals' for a clearer meaning.
+- 'min.individuals' is the minimum NUMBER of individuals in a class, it is not a PERCENTAGE of the total nomber of observations anymore. Its value cannot be lower than 2
+
+
+HDclassif version 1.2.1 2012-01-05:
+
+- the citation of the package is updated
+- new reference in .Rd files
+
+
+HDclassif version 1.2 2011-07-15:
+
+- now the BIC and the log likelihood are not divided by N (the number of observation) anymore
+- help files have been rewritten
+- very slight changes in the random initialization of hddc (now the random init cannot begin with an empty class)
+- changes on the predict.hdc function. It now works all the time.
+- added some features to hdda, notably the model "all" and the V-fold cross validation for dimension selection
+- a cross-validation option has been added for hdda in order to select the best dimension or threshold with respect to the CV result
+- big changes in the function plot.hdc. Now the dimensions selection using either Cattell's scree-test or the BIC can be plotted.
+- the graph of the eigenvalues has been removed
+- graph scale changed for Cattell's scree-test to see directly the threshold levels
+- now it is possible to select the dimension with the "bic" criterion in hddc
+- added some warnings when the value of the parameter b is very low (inferior to 1e-6)
+- the calclulation trick when N<p is now done since Ni<p, Ni being the number of observations for the class i
+- added a leave-one-out cross-validation option to hdda
+
+
+HDclassif version 1.1.3 2011-03-30:
+
+- bug fix: hddc can now be initialized with a given class vector 
+
+
+HDclassif version 1.1.2 2011-02-10:
+
+- slight change in the demo functions
+- changing description
+
+
+HDclassif version 1.1.1 2010-12-01:
+
+- the models can now be selected using integers instead of names
+- the graph of hddc now gives the comparison between different models and different number of clusters
+- the calculation of the log likelihood has been modified in hddc
+
+
+HDclassif version 1.1 2010-10-01:
+
+- A plot minor issue is fixed
+- Some names are changed in the functions hdda and hddc : 
+	¤ Former name	->	New name
+	¤ AkiBkQkDk		->	AkjBkQkDk
+	¤ AkiBQkDk		->	AkjBQkDk
+	¤ AkiBkQkD		->	AkjBkQkD
+	¤ AkiBQkD		->	AkjBQkD
+	¤ AiBQD			->	AjBQD
+- When several models are given, HDDA and HDDC now explicitly give the model they select
+- The initialization kmeans can be settled by the user using ... in HDDC
+- HDDC now handles several models at once
+- A demo has been built for the methods hdda and hddc
+
+
