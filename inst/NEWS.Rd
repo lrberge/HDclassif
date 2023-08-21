@@ -3,13 +3,13 @@
 
 \title{News for \R Package \pkg{HDclassif}}
 
-\section{Changes in version 2.2.1}{
+\section{Changes in version 2.2.1 (2023-08-21)}{
 	\itemize{
 		\item Update the maintainer's email address.
 	}
 }
 
-\section{Changes in version 2.2.0}{
+\section{Changes in version 2.2.0 (2019-11-19)}{
 	\subsection{User visible changes}{
 		\itemize{
 			\item New default for the argument 'show' in functions \code{hdda} and \code{hddc}. Now 'show' is set to the value of \code{getHDclassif.show()} which is \code{FALSE} at package loading. To set the value of 'show' permanently, use the new function \code{setHDclassif.show}.
@@ -28,7 +28,7 @@
 	}
 }
 
-\section{Changes in version 2.1.0 2018-05-10}{
+\section{Changes in version 2.1.0 (2018-05-10)}{
 	\subsection{Major Bug Fix}{
 		\itemize{
 			\item[SlopeHeuristic (thanks to Thibaut Marin-Cudraz)] There was an important issue in the computation of the slope heuristic, undermining its validity in some situations. This is now corrected.

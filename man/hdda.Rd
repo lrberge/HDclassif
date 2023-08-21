@@ -4,11 +4,23 @@
 \alias{hdda}
 \title{High Dimensional Discriminant Analysis}
 \usage{
-hdda(data, cls, model = "AkjBkQkDk", graph = FALSE,
-  d_select = "Cattell", threshold = 0.2, com_dim = NULL,
-  show = getHDclassif.show(), scaling = FALSE, cv.dim = 1:10,
-  cv.threshold = c(0.001, 0.005, 0.05, 1:9 * 0.1), cv.vfold = 10,
-  LOO = FALSE, noise.ctrl = 1e-08, d)
+hdda(
+  data,
+  cls,
+  model = "AkjBkQkDk",
+  graph = FALSE,
+  d_select = "Cattell",
+  threshold = 0.2,
+  com_dim = NULL,
+  show = getHDclassif.show(),
+  scaling = FALSE,
+  cv.dim = 1:10,
+  cv.threshold = c(0.001, 0.005, 0.05, 1:9 * 0.1),
+  cv.vfold = 10,
+  LOO = FALSE,
+  noise.ctrl = 1e-08,
+  d
+)
 }
 \arguments{
 \item{data}{A matrix or a data frame of observations, assuming the rows are the observations and the columns the variables. Note that NAs are not allowed.}
@@ -164,7 +176,10 @@ Bouveyron, C. Girard, S. and Schmid, C. (2007) \dQuote{High Dimensional Discrimi
 
 Bouveyron, C. Celeux, G. and Girard, S. (2010) \dQuote{Intrinsic dimension estimation by maximum likelihood in probabilistic PCA}, Technical Report 440372, Universite Paris 1 Pantheon-Sorbonne
 
-Berge, L. Bouveyron, C. and Girard, S. (2012) \dQuote{HDclassif: An R Package for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, \emph{Journal of Statistical Software}, \bold{46}(6), 1--29, url: \href{http://www.jstatsoft.org/v46/i06/}{http://www.jstatsoft.org/v46/i06/}
+Berge, L. Bouveyron, C. and Girard, S. (2012) \dQuote{HDclassif: An R Package 
+for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, 
+\emph{Journal of Statistical Software}, \bold{46}(6), 1--29, url: 
+\href{https://doi.org/10.18637/jss.v046.i06}{https://doi.org/10.18637/jss.v046.i06}
 }
 \seealso{
 \code{\link{hddc}}, \code{\link{predict.hdc}}, \code{\link{plot.hdc}}

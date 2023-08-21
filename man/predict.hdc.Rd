@@ -63,7 +63,9 @@ Bouveyron, C. Girard, S. and Schmid, C. (2007) \dQuote{High Dimensional Discrimi
 
 Bouveyron, C. Girard, S. and Schmid, C. (2007) \dQuote{High-Dimensional Data Clustering}, \emph{Computational Statistics and Data Analysis}, vol. \bold{52} (1), pp. 502--519
 
-Berge, L. Bouveyron, C. and Girard, S. (2012) \dQuote{HDclassif: An R Package for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, \emph{Journal of Statistical Software}, \bold{46}(6), 1--29, url: \href{http://www.jstatsoft.org/v46/i06/}{http://www.jstatsoft.org/v46/i06/}
+Berge, L. Bouveyron, C. and Girard, S. (2012) \dQuote{HDclassif: An R Package for Model-Based 
+Clustering and Discriminant Analysis of High-Dimensional Data}, \emph{Journal of Statistical Software}, 
+\bold{46}(6), 1--29, url: \href{https://doi.org/10.18637/jss.v046.i06}{https://doi.org/10.18637/jss.v046.i06}
 }
 \seealso{
 The functions to do high dimensional classification \code{\link{hdda}} or clustering \code{\link{hddc}}.

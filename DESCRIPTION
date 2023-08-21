@@ -21,4 +21,4 @@ Description: Discriminant analysis and data clustering methods for high
 License: GPL-2
 LazyLoad: yes
 ZipData: no
-RoxygenNote: 6.1.1
+RoxygenNote: 7.2.3

@@ -4,13 +4,32 @@
 \alias{hddc}
 \title{High Dimensional Data Clustering}
 \usage{
-hddc(data, K = 1:10, model = c("AkjBkQkDk"), threshold = 0.2,
-  criterion = "bic", com_dim = NULL, itermax = 200, eps = 0.001,
-  algo = "EM", d_select = "Cattell", init = "kmeans", init.vector,
-  show = getHDclassif.show(), mini.nb = c(5, 10), scaling = FALSE,
-  min.individuals = 2, noise.ctrl = 1e-08, mc.cores = 1,
-  nb.rep = 1, keepAllRes = TRUE, kmeans.control = list(),
-  d_max = 100, subset = Inf, d)
+hddc(
+  data,
+  K = 1:10,
+  model = c("AkjBkQkDk"),
+  threshold = 0.2,
+  criterion = "bic",
+  com_dim = NULL,
+  itermax = 200,
+  eps = 0.001,
+  algo = "EM",
+  d_select = "Cattell",
+  init = "kmeans",
+  init.vector,
+  show = getHDclassif.show(),
+  mini.nb = c(5, 10),
+  scaling = FALSE,
+  min.individuals = 2,
+  noise.ctrl = 1e-08,
+  mc.cores = 1,
+  nb.rep = 1,
+  keepAllRes = TRUE,
+  kmeans.control = list(),
+  d_max = 100,
+  subset = Inf,
+  d
+)
 }
 \arguments{
 \item{data}{A matrix or a data frame of observations, assuming the rows are the observations and the columns the variables. Note that NAs are not allowed.}
@@ -27,7 +46,7 @@ hddc(data, K = 1:10, model = c("AkjBkQkDk"), threshold = 0.2,
 
 \item{itermax}{The maximum number of iterations allowed. The default is 200.}
 
-\item{eps}{A positive double, default is 0.001. It is the stopping criterion: the algorithm stops when the difference between two successive log-likelihoods is lower than \sQuote{eps}.}
+\item{eps}{A positive double, default is 0.001. It is the stopping criterion: the algorithm stops when the difference between two successive log-likelihoods is lower than \code{eps}.}
 
 \item{algo}{A character string indicating the algorithm to be used. The available algorithms are the Expectation-Maximisation ("EM"), the Classification E-M ("CEM") and the Stochastic E-M ("SEM"). The default algorithm is the "EM".}
 
@@ -226,7 +245,10 @@ table(prms$class)
 \references{
 Bouveyron, C. Girard, S. and Schmid, C. (2007) \dQuote{High-Dimensional Data Clustering}, \emph{Computational Statistics and Data Analysis}, vol. \bold{52} (1), pp. 502--519
 
-Berge, L. Bouveyron, C. and Girard, S. (2012) \dQuote{HDclassif: An R Package for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, \emph{Journal of Statistical Software}, \bold{46}(6), 1--29, url: \href{http://www.jstatsoft.org/v46/i06/}{http://www.jstatsoft.org/v46/i06/}
+Berge, L. Bouveyron, C. and Girard, S. (2012) \dQuote{HDclassif: An R Package for 
+Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, 
+\emph{Journal of Statistical Software}, \bold{46}(6), 1--29, url: 
+\href{https://doi.org/10.18637/jss.v046.i06}{https://doi.org/10.18637/jss.v046.i06}
 }
 \seealso{
 \code{\link{hdda}}, \code{\link{predict.hdc}}, \code{\link{plot.hdc}}.

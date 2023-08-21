@@ -96,7 +96,10 @@
 #' 
 #' Bouveyron, C. Celeux, G. and Girard, S. (2010) \dQuote{Intrinsic dimension estimation by maximum likelihood in probabilistic PCA}, Technical Report 440372, Universite Paris 1 Pantheon-Sorbonne
 #' 
-#' Berge, L. Bouveyron, C. and Girard, S. (2012) \dQuote{HDclassif: An R Package for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, \emph{Journal of Statistical Software}, \bold{46}(6), 1--29, url: \href{http://www.jstatsoft.org/v46/i06/}{http://www.jstatsoft.org/v46/i06/}
+#' Berge, L. Bouveyron, C. and Girard, S. (2012) \dQuote{HDclassif: An R Package 
+#' for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, 
+#' \emph{Journal of Statistical Software}, \bold{46}(6), 1--29, url: 
+#' \href{https://doi.org/10.18637/jss.v046.i06}{https://doi.org/10.18637/jss.v046.i06}
 #' 
 #' @author
 #' Laurent Berge, Charles Bouveyron and Stephane Girard
