@@ -2,7 +2,7 @@ Encoding: UTF-8
 Package: HDclassif
 Type: Package
 Title: High Dimensional Supervised Classification and Clustering
-Version: 2.2.0
+Version: 2.2.1
 Depends:
     grDevices,
     utils,
@@ -12,7 +12,7 @@ Depends:
 Imports:
     rARPACK
 Author: Laurent Berge, Charles Bouveyron and Stephane Girard
-Maintainer: Laurent Berge <laurent.berge@uni.lu>
+Maintainer: Laurent Berge <laurent.berge@u-bordeaux.fr>
 Description: Discriminant analysis and data clustering methods for high
     dimensional data, based on the assumption that high-dimensional data live in
     different subspaces with low dimensionality proposing a new parametrization of

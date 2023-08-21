@@ -3,6 +3,12 @@
 
 \title{News for \R Package \pkg{HDclassif}}
 
+\section{Changes in version 2.2.1}{
+	\itemize{
+		\item Update the maintainer's email address.
+	}
+}
+
 \section{Changes in version 2.2.0}{
 	\subsection{User visible changes}{
 		\itemize{
