@@ -14,8 +14,8 @@ myCallAlerts = function(call, name, myType, nParents=1, mustBeThere=FALSE, prefi
         what = call[[name]]
         val = try(eval.parent(what, nParents), silent = TRUE)
         # browser()
-        if( "try-error" %in% class(val) ){
-            if( class(what)=="name" ){
+        if(inherits(val, "try-error") ){
+            if(inherits(what, "name")){
                 # it means the variable was not found
                 stop(prefix,"For argument '",name,"': object '",what,"' not found.", call. = FALSE)
             } else {
