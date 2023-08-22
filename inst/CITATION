@@ -1,6 +1,6 @@
 citHeader("To cite HDclassif in publications use:")
 
-citEntry(entry = "Article",
+bibentry(bibtype = "Article",
   title        = "{HDclassif}: An {R} Package for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data",
   author       = c(person("Laurent", "Bergé"),
                    person("Charles", "Bouveyron"),
