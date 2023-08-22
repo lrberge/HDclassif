@@ -34,7 +34,9 @@ Arguments based from or to other methods. Not currently used.
 	
 	Bouveyron, C. Celeux, G. and Girard, S. (2011), \dQuote{Intrinsic dimension estimation by maximum likelihood in probabilistic PCA}, Pattern Recognition Letters, vol. 32 (14), pp. 1706-1713.
 	
-	Berge, L. Bouveyron, C. and Girard, S. (2012), \dQuote{HDclassif: An R Package for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, Journal of Statistical Software, 46(6), pp. 1-29, url: \url{http://www.jstatsoft.org/v46/i06/}.
+	Berge, L. Bouveyron, C. and Girard, S. (2012), \dQuote{HDclassif: An R Package 
+	for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, 
+	Journal of Statistical Software, 46(6), pp. 1-29, url: \doi{10.18637/jss.v046.i06}.
 	
 	Hastie, T., & Tibshirani, R. (1996), \dQuote{Discriminant analysis by Gaussian mixtures}, Journal of the Royal Statistical Society, Series B (Methodological), pp. 155-176.
 }
