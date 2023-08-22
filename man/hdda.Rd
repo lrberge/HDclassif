@@ -179,7 +179,7 @@ Bouveyron, C. Celeux, G. and Girard, S. (2010) \dQuote{Intrinsic dimension estim
 Berge, L. Bouveyron, C. and Girard, S. (2012) \dQuote{HDclassif: An R Package 
 for Model-Based Clustering and Discriminant Analysis of High-Dimensional Data}, 
 \emph{Journal of Statistical Software}, \bold{46}(6), 1--29, url: 
-\href{https://doi.org/10.18637/jss.v046.i06}{https://doi.org/10.18637/jss.v046.i06}
+\doi{10.18637/jss.v046.i06}
 }
 \seealso{
 \code{\link{hddc}}, \code{\link{predict.hdc}}, \code{\link{plot.hdc}}
